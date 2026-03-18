@@ -1,0 +1,137 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="214" y1="48" x2="1354" y2="804" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101C29"/>
+      <stop offset="0.55" stop-color="#0B141D"/>
+      <stop offset="1" stop-color="#091119"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#162432" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#0E1822" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="278" y1="118" x2="1258" y2="658" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0BA6B"/>
+      <stop offset="1" stop-color="#6F9CC9"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#F0BA6B" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#6F9CC9" stop-opacity="0.2"/>
+    </linearGradient>
+    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(344 228) rotate(24.6) scale(406 264)">
+      <stop stop-color="#F0BA6B" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#F0BA6B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1236 628) rotate(148.3) scale(512 348)">
+      <stop stop-color="#5C93D8" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#5C93D8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-40" y="-40" width="1680" height="980" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="32" flood-color="#000000" flood-opacity="0.34"/>
+    </filter>
+    <filter id="soft" x="-40" y="-40" width="1680" height="980" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <rect width="1600" height="900" rx="36" fill="url(#glowLeft)"/>
+  <rect width="1600" height="900" rx="36" fill="url(#glowRight)"/>
+
+  <g opacity="0.22">
+    <path d="M84 140H1516" stroke="#B7C8DA" stroke-opacity="0.14"/>
+    <path d="M84 232H1516" stroke="#B7C8DA" stroke-opacity="0.14"/>
+    <path d="M84 324H1516" stroke="#B7C8DA" stroke-opacity="0.14"/>
+    <path d="M84 416H1516" stroke="#B7C8DA" stroke-opacity="0.14"/>
+    <path d="M84 508H1516" stroke="#B7C8DA" stroke-opacity="0.14"/>
+    <path d="M84 600H1516" stroke="#B7C8DA" stroke-opacity="0.14"/>
+    <path d="M84 692H1516" stroke="#B7C8DA" stroke-opacity="0.14"/>
+    <path d="M84 784H1516" stroke="#B7C8DA" stroke-opacity="0.14"/>
+    <path d="M160 72V828" stroke="#B7C8DA" stroke-opacity="0.12"/>
+    <path d="M312 72V828" stroke="#B7C8DA" stroke-opacity="0.12"/>
+    <path d="M464 72V828" stroke="#B7C8DA" stroke-opacity="0.12"/>
+    <path d="M616 72V828" stroke="#B7C8DA" stroke-opacity="0.12"/>
+    <path d="M768 72V828" stroke="#B7C8DA" stroke-opacity="0.12"/>
+    <path d="M920 72V828" stroke="#B7C8DA" stroke-opacity="0.12"/>
+    <path d="M1072 72V828" stroke="#B7C8DA" stroke-opacity="0.12"/>
+    <path d="M1224 72V828" stroke="#B7C8DA" stroke-opacity="0.12"/>
+    <path d="M1376 72V828" stroke="#B7C8DA" stroke-opacity="0.12"/>
+  </g>
+
+  <g filter="url(#soft)" opacity="0.44">
+    <path d="M520 420C614 382 736 374 858 388C975 402 1086 436 1168 500" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M488 564C620 548 740 560 840 598C932 632 1020 634 1146 584" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="154" y="140" width="930" height="548" rx="34" fill="url(#panel)" stroke="#A7BED6" stroke-opacity="0.18"/>
+    <rect x="1006" y="208" width="360" height="204" rx="28" fill="url(#panel)" stroke="#A7BED6" stroke-opacity="0.18"/>
+    <rect x="1118" y="460" width="274" height="168" rx="28" fill="#0E1822" stroke="#A7BED6" stroke-opacity="0.14"/>
+    <rect x="926" y="548" width="260" height="120" rx="24" fill="#12202C" stroke="#A7BED6" stroke-opacity="0.12"/>
+  </g>
+
+  <rect x="186" y="172" width="866" height="68" rx="20" fill="#111D29" stroke="#A7BED6" stroke-opacity="0.12"/>
+  <circle cx="222" cy="206" r="6" fill="#F0BA6B"/>
+  <circle cx="248" cy="206" r="6" fill="#6F9CC9" fill-opacity="0.82"/>
+  <circle cx="274" cy="206" r="6" fill="#D7E2EC" fill-opacity="0.32"/>
+  <text x="320" y="214" fill="#F2F6FB" font-family="'Segoe UI', sans-serif" font-size="24" font-weight="700">Veyronix Operations</text>
+  <text x="792" y="214" fill="#A2B3C6" font-family="'Segoe UI', sans-serif" font-size="18">Clients</text>
+  <text x="870" y="214" fill="#A2B3C6" font-family="'Segoe UI', sans-serif" font-size="18">Vehicles</text>
+  <text x="956" y="214" fill="#A2B3C6" font-family="'Segoe UI', sans-serif" font-size="18">Orders</text>
+
+  <rect x="190" y="270" width="260" height="172" rx="24" fill="#0E1823" stroke="#A7BED6" stroke-opacity="0.14"/>
+  <rect x="472" y="270" width="262" height="172" rx="24" fill="#101C28" stroke="#A7BED6" stroke-opacity="0.14"/>
+  <rect x="756" y="270" width="262" height="172" rx="24" fill="#0E1823" stroke="#A7BED6" stroke-opacity="0.14"/>
+
+  <text x="218" y="314" fill="#A2B3C6" font-family="'Segoe UI', sans-serif" font-size="18">Attention</text>
+  <text x="218" y="382" fill="#F2F6FB" font-family="'Segoe UI', sans-serif" font-size="64" font-weight="700">07</text>
+  <text x="218" y="414" fill="#D3DEE8" font-family="'Segoe UI', sans-serif" font-size="18">active orders require action</text>
+
+  <text x="500" y="314" fill="#A2B3C6" font-family="'Segoe UI', sans-serif" font-size="18">Team Load</text>
+  <text x="500" y="382" fill="#F2F6FB" font-family="'Segoe UI', sans-serif" font-size="64" font-weight="700">84%</text>
+  <rect x="500" y="402" width="194" height="12" rx="6" fill="#162634"/>
+  <rect x="500" y="402" width="162" height="12" rx="6" fill="url(#accent)"/>
+  <text x="500" y="434" fill="#D3DEE8" font-family="'Segoe UI', sans-serif" font-size="18">peak shift occupancy</text>
+
+  <text x="784" y="314" fill="#A2B3C6" font-family="'Segoe UI', sans-serif" font-size="18">Repeat Visits</text>
+  <text x="784" y="382" fill="#F2F6FB" font-family="'Segoe UI', sans-serif" font-size="64" font-weight="700">43</text>
+  <text x="784" y="414" fill="#D3DEE8" font-family="'Segoe UI', sans-serif" font-size="18">return vehicles in current range</text>
+
+  <rect x="190" y="474" width="828" height="178" rx="28" fill="#0E1823" stroke="#A7BED6" stroke-opacity="0.14"/>
+  <text x="222" y="520" fill="#F2F6FB" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="700">Linked Workflow</text>
+  <text x="222" y="552" fill="#A2B3C6" font-family="'Segoe UI', sans-serif" font-size="19">Client and vehicle context follow the order from booking to reporting.</text>
+  <rect x="222" y="586" width="130" height="38" rx="19" fill="#13202C" stroke="#A7BED6" stroke-opacity="0.14"/>
+  <rect x="390" y="586" width="148" height="38" rx="19" fill="#13202C" stroke="#A7BED6" stroke-opacity="0.14"/>
+  <rect x="576" y="586" width="124" height="38" rx="19" fill="#13202C" stroke="#A7BED6" stroke-opacity="0.14"/>
+  <rect x="738" y="586" width="150" height="38" rx="19" fill="#13202C" stroke="#A7BED6" stroke-opacity="0.14"/>
+  <text x="254" y="611" fill="#DCE6EE" font-family="'Segoe UI', sans-serif" font-size="18">Client</text>
+  <text x="425" y="611" fill="#DCE6EE" font-family="'Segoe UI', sans-serif" font-size="18">Vehicle</text>
+  <text x="612" y="611" fill="#DCE6EE" font-family="'Segoe UI', sans-serif" font-size="18">Order</text>
+  <text x="776" y="611" fill="#DCE6EE" font-family="'Segoe UI', sans-serif" font-size="18">Reports</text>
+  <path d="M352 606H390" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M538 606H576" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M700 606H738" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="1040" y="254" fill="#F2F6FB" font-family="'Segoe UI', sans-serif" font-size="24" font-weight="700">Service Schedule</text>
+  <text x="1040" y="286" fill="#A2B3C6" font-family="'Segoe UI', sans-serif" font-size="18">today</text>
+  <rect x="1040" y="322" width="40" height="60" rx="18" fill="#142230"/>
+  <rect x="1096" y="300" width="40" height="82" rx="18" fill="url(#accent)"/>
+  <rect x="1152" y="336" width="40" height="46" rx="18" fill="#142230"/>
+  <rect x="1208" y="280" width="40" height="102" rx="18" fill="#162C41"/>
+  <rect x="1264" y="316" width="40" height="66" rx="18" fill="#142230"/>
+  <text x="1044" y="405" fill="#D3DEE8" font-family="'Segoe UI', sans-serif" font-size="17">booking slots and workshop rhythm</text>
+
+  <text x="1148" y="502" fill="#F2F6FB" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="700">Reports</text>
+  <text x="1148" y="532" fill="#A2B3C6" font-family="'Segoe UI', sans-serif" font-size="17">margin</text>
+  <text x="1148" y="582" fill="#F2F6FB" font-family="'Segoe UI', sans-serif" font-size="46" font-weight="700">+12%</text>
+
+  <text x="956" y="582" fill="#F2F6FB" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="700">Top entities</text>
+  <text x="956" y="612" fill="#A2B3C6" font-family="'Segoe UI', sans-serif" font-size="16">clients, vehicles, masters</text>
+  <path d="M956 636H1156" stroke="url(#line)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M956 654H1098" stroke="url(#line)" stroke-width="2" stroke-linecap="round" opacity="0.72"/>
+
+  <rect x="138" y="96" width="202" height="42" rx="21" fill="#12202D" stroke="#A7BED6" stroke-opacity="0.1"/>
+  <text x="170" y="123" fill="#F0BA6B" font-family="'Segoe UI', sans-serif" font-size="17" font-weight="700">Desktop ERP for autoservice</text>
+
+  <path d="M1348 112L1458 112" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1428 112L1486 112" stroke="#6F9CC9" stroke-opacity="0.32" stroke-width="3" stroke-linecap="round"/>
+</svg>
