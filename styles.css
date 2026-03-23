@@ -1745,7 +1745,6 @@ h3 {
 }
 
 .micro-proof span,
-.form-note,
 .form-status,
 .compare-label {
   font-size: 0.94rem;
@@ -1755,8 +1754,7 @@ h3 {
 .contact-proof span,
 .compare-card,
 .faq-item,
-.lead-form label,
-.contact-channels a {
+.lead-form label {
   border: 1px solid rgba(160, 183, 209, 0.12);
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
@@ -1864,32 +1862,10 @@ h3 {
   color: rgba(212, 223, 236, 0.45);
 }
 
-.form-note {
-  margin: 0;
-  color: var(--text-muted);
-}
-
 .form-status {
   margin: 0;
   color: #f3d8a5;
   min-height: 1.2em;
-}
-
-.contact-channels {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.contact-channels a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 38px;
-  padding: 0 14px;
-  border-radius: 999px;
-  color: var(--text);
-  text-decoration: none;
-  font-size: 0.9rem;
 }
 
 .mobile-cta {
