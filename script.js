@@ -3,7 +3,11 @@ const progressBar = document.getElementById("scroll-progress-bar");
 const sectionNodes = Array.from(document.querySelectorAll("[data-section]"));
 const navLinks = Array.from(document.querySelectorAll(".topnav a"));
 const topbar = document.querySelector(".topbar");
+const mobileNavToggle = document.getElementById("mobile-nav-toggle");
 const backToTop = document.getElementById("back-to-top");
+const mobileCta = document.querySelector(".mobile-cta");
+const contactSection = document.getElementById("contact");
+const footer = document.querySelector(".footer");
 const parallaxNodes = Array.from(
   document.querySelectorAll(
     ".hero-brand-banner, .parallax-orb, .scroll-signal, .value-strip, .workflow-intro-card, .feature-highlight, .convenience-badge-row",
@@ -11,8 +15,10 @@ const parallaxNodes = Array.from(
 );
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const compactViewport = window.matchMedia("(max-width: 900px)");
+const mobileViewport = window.matchMedia("(max-width: 720px)");
 let scrollUiTicking = false;
 let parallaxFrame = 0;
+let mobileCtaHidden = false;
 
 const parallaxState = parallaxNodes.map((node) => ({
   node,
@@ -24,6 +30,25 @@ const parallaxState = parallaxNodes.map((node) => ({
 if (yearNode) {
   yearNode.textContent = String(new Date().getFullYear());
 }
+
+const setMobileNavOpen = (isOpen) => {
+  if (!topbar || !mobileNavToggle) {
+    return;
+  }
+
+  const shouldOpen = Boolean(isOpen && mobileViewport.matches);
+  topbar.classList.toggle("is-nav-open", shouldOpen);
+  mobileNavToggle.setAttribute("aria-expanded", shouldOpen ? "true" : "false");
+  mobileNavToggle.setAttribute("aria-label", shouldOpen ? "Закрыть меню" : "Открыть меню");
+};
+
+const syncMobileCtaVisibility = () => {
+  if (!mobileCta) {
+    return;
+  }
+
+  mobileCta.classList.toggle("is-hidden", mobileCtaHidden);
+};
 
 const updateParallaxMetrics = () => {
   const scrollTop = window.scrollY || window.pageYOffset;
@@ -122,6 +147,28 @@ for (const section of sectionNodes) {
   }
 }
 
+const mobileCtaObserver =
+  "IntersectionObserver" in window && mobileCta && (contactSection || footer)
+    ? new IntersectionObserver(
+        (entries) => {
+          mobileCtaHidden = entries.some((entry) => entry.isIntersecting);
+          syncMobileCtaVisibility();
+        },
+        {
+          threshold: 0.08,
+          rootMargin: "0px 0px -18% 0px",
+        },
+      )
+    : null;
+
+if (mobileCtaObserver && contactSection) {
+  mobileCtaObserver.observe(contactSection);
+}
+
+if (mobileCtaObserver && footer) {
+  mobileCtaObserver.observe(footer);
+}
+
 const updateScrollProgress = () => {
   if (!progressBar) {
     return;
@@ -177,6 +224,26 @@ const queueScrollUi = () => {
 updateScrollUi();
 window.addEventListener("scroll", queueScrollUi, { passive: true });
 window.addEventListener("resize", queueScrollUi);
+
+if (mobileNavToggle) {
+  mobileNavToggle.addEventListener("click", () => {
+    setMobileNavOpen(!topbar?.classList.contains("is-nav-open"));
+  });
+}
+
+for (const link of navLinks) {
+  link.addEventListener("click", () => {
+    setMobileNavOpen(false);
+  });
+}
+
+mobileViewport.addEventListener("change", (event) => {
+  if (!event.matches) {
+    setMobileNavOpen(false);
+  }
+});
+
+syncMobileCtaVisibility();
 
 const leadForm = document.getElementById("lead-form");
 const formStatus = document.getElementById("form-status");

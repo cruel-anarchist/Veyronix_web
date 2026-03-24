@@ -44,7 +44,19 @@
             <span class="brand-subtitle">ERP для автосервиса</span>
           </span>
         </a>
-        <nav class="topnav" aria-label="Навигация">
+        <button
+          class="mobile-nav-toggle"
+          id="mobile-nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="topnav"
+          aria-label="Открыть меню"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="topnav" id="topnav" aria-label="Навигация">
           <a href="#value">О продукте</a>
           <a href="#problems">Проблемы</a>
           <a href="#features">Возможности</a>
@@ -442,7 +454,7 @@
           <div class="contact-panel" data-parallax data-parallax-speed="0.05">
             <div>
               <div class="eyebrow">Запросить демо</div>
-              <h2>Покажем, как Veyronix будет выглядеть именно в работе вашего сервиса</h2>
+              <h2 class="heading-keep-compact">Покажем, как Veyronix будет выглядеть именно в работе вашего сервиса</h2>
               <p>
                 Оставьте контакты, и мы свяжемся с вами, чтобы показать систему
                 на реальных сценариях: запись, заказ-наряды, история ремонта,
